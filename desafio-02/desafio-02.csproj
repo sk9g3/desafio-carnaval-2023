@@ -1,0 +1,19 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net7.0</TargetFramework>
+    <RootNamespace>desafio_02</RootNamespace>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+  <ItemGroup>
+    <Using Include="desafio_02"/>
+    <Using Include="desafio_02.Enums"/>
+    <Using Include="desafio_02.Extensions"/>
+    <Using Include="desafio_02.Exceptions"/>
+    <Using Include="System.ComponentModel.DataAnnotations"/>
+    <Using Include="System.Reflection"/>
+    <Using Include="System.Text"/>
+  </ItemGroup>
+</Project>
