@@ -8,11 +8,11 @@ namespace desafio_05
             "dezessete", "dezoito", "dezenove" };
 
         public static string[] Dezenas = new string[] 
-        { "cem", "dez", "vinte", "trinta", "quarenta", 
+        { "zero", "dez", "vinte", "trinta", "quarenta", 
             "cinquenta", "sessenta", "setenta", "oitenta", "noventa" };
 
         public static string[] Centenas = new string[] 
-        { "zero", "cento", "duzentos", "trezentos", "quatrocentos", "quinhentos", 
+        { "cem", "cento", "duzentos", "trezentos", "quatrocentos", "quinhentos", 
             "seiscentos", "setecentos", "oitocentos", "novecentos" };
     }
 }

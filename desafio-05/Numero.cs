@@ -56,17 +56,17 @@ namespace desafio_05
 
         private void ObterCentenaDezenaUnidadePorExtenso(ClasseDecimal classeDecimal, (int centena, int dezena, int unidade) unidades, ref StringBuilder porExtenso)
         {
-             if (unidades.centena == 0 && unidades.dezena == 0 && unidades.unidade == 0)
+            if (unidades.centena == 0 && unidades.dezena == 0 && unidades.unidade == 0)
                 return;
             string centenaExtenso = string.Empty;
             string dezenaExtenso = string.Empty;
             string unidadeExtenso = string.Empty;
-            
+
             var configuracao = configuracoes[classeDecimal];
-           
+
             if (unidades.centena > 0)
             {
-                centenaExtenso = (unidades.dezena == 0 && unidades.unidade == 0) ? SistemaDecimal.Dezenas[0] : SistemaDecimal.Centenas[unidades.centena];
+                centenaExtenso = (unidades.centena == 1 && unidades.dezena == 0 && unidades.unidade == 0) ? SistemaDecimal.Centenas[0] : SistemaDecimal.Centenas[unidades.centena];
             }
 
             if (unidades.dezena > 1)
@@ -80,20 +80,20 @@ namespace desafio_05
             }
 
             const string conjucao = " e ";
-            
+
             porExtenso.AppendIfNotNull("{0}", porExtenso.Length > 0 && (centenaExtenso.IsNotNullOrNotEmpty() || dezenaExtenso.IsNotNullOrNotEmpty() || unidadeExtenso.IsNotNullOrNotEmpty()) ? conjucao : string.Empty);
             porExtenso.AppendIfNotNull("{0}", centenaExtenso);
             porExtenso.AppendIfNotNull("{0}{1}", centenaExtenso.IsNotNullOrNotEmpty() && dezenaExtenso.IsNotNullOrNotEmpty() && unidadeExtenso.IsNotNullOrNotEmpty() ? conjucao : string.Empty, dezenaExtenso);
             porExtenso.AppendIfNotNull("{0}{1}", unidadeExtenso.IsNotNullOrNotEmpty() && (centenaExtenso.IsNotNullOrNotEmpty() || dezenaExtenso.IsNotNullOrNotEmpty()) ? conjucao : string.Empty, unidadeExtenso);
             porExtenso.AppendIfNotNull(" {0}", (unidades.unidade == 1 && unidades.dezena == 0 && unidades.centena == 0 ? configuracao.DescricaoClasseSingular : configuracao.DescricaoClassePlural));
-            if(classeDecimal != ClasseDecimal.Centavos)
+            if (classeDecimal != ClasseDecimal.Centavos)
             {
                 const string moedaPlural = " reais";
                 const string moedaSingular = " real";
                 porExtenso.Replace(moedaPlural, string.Empty).Replace(moedaSingular, string.Empty);
                 porExtenso.AppendIfNotNull("{0}", Valor > 1 ? moedaPlural : moedaSingular);
             }
-            
+
         }
 
         public override string ToString()
