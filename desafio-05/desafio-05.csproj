@@ -3,15 +3,13 @@
   <PropertyGroup>
     <OutputType>Exe</OutputType>
     <TargetFramework>net7.0</TargetFramework>
-    <RootNamespace>desafio_04</RootNamespace>
+    <RootNamespace>desafio_05</RootNamespace>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
   </PropertyGroup>
   <ItemGroup>
-    <Using Include="desafio_04"/>
-    <Using Include="desafio_04.Exceptions"/>
-    <Using Include="System.ComponentModel.DataAnnotations"/>
-    <Using Include="System.Reflection"/>
-    <Using Include="System.Text"/>
+    <Using Include="System.Text" />
+    <Using Include="desafio_05.Enums" />
+    <Using Include="desafio_05.Extensions" />
   </ItemGroup>
 </Project>
