@@ -24,7 +24,7 @@ dotnet run --project <NOME_PROJETO>
 | <a href="desafio02">Desafio 2</a> | desafio-02 | ``` dotnet run --project desafio-02 ``` 
 | <a href="desafio04">Desafio 4</a> | desafio-04 | ``` dotnet run --project desafio-04 ``` 
 | <a href="desafio05">Desafio 5</a> | desafio-05 | ``` dotnet run --project desafio-05 ``` 
-
+| <a href="desafio06">Desafio 6</a> | desafio-06 | ``` dotnet run --project desafio-06 ```
 <br/>
 <br/>
 
@@ -76,4 +76,16 @@ Escreva um programa que informa o valor por extenso, por exemplo:
 ```sh
 - Valor final da compra: 328,90
 - Output do programa: TREZENTOS E VINTE E OITO REAIS E NOVENTA CENTAVOS
+```
+
+## 🤯 Desafio 06 <br><a name="desafio06"></a>
+
+Escreva um programa que encripta um texto utilizando uma tabela de mapeamento de caracteres, por exemplo:
+
+a = K, n = J, d = A, r = T, e = L
+
+**Resultado esperado**
+```sh
+Input: andre
+Output: KJATL
 ```
