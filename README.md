@@ -20,11 +20,13 @@ dotnet run --project <NOME_PROJETO>
 
 | PROJETO   |  NOME_PROJETO  |   COMANDO      |
 |----------------|:-------------:|:-------------:|
-| <a href="desafio01">Desafio 1</a> | desafio-01 |  ``` dotnet run --project desafio-01 ``` |
-| <a href="desafio02">Desafio 2</a> | desafio-02 | ``` dotnet run --project desafio-02 ``` 
-| <a href="desafio04">Desafio 4</a> | desafio-04 | ``` dotnet run --project desafio-04 ``` 
-| <a href="desafio05">Desafio 5</a> | desafio-05 | ``` dotnet run --project desafio-05 ``` 
-| <a href="desafio06">Desafio 6</a> | desafio-06 | ``` dotnet run --project desafio-06 ```
+| [Desafio 1](#-desafio-01--) | desafio-01 |  ``` dotnet run --project desafio-01 ``` |
+| [Desafio 2](#-desafio-02-) | desafio-02 | ``` dotnet run --project desafio-02 ``` 
+| [Desafio 4](#-desafio-04-) | desafio-04 | ``` dotnet run --project desafio-04 ``` 
+| [Desafio 5](#-desafio-05-) | desafio-05 | ``` dotnet run --project desafio-05 ``` 
+| [Desafio 6](#-desafio-06-) | desafio-06 | ``` dotnet run --project desafio-06 ```
+| [Desafio 7](#-desafio-07-) | desafio-07 | ``` dotnet run --project desafio-07 ```
+
 <br/>
 <br/>
 
@@ -88,4 +90,20 @@ a = K, n = J, d = A, r = T, e = L
 ```sh
 Input: andre
 Output: KJATL
+```
+
+## 🤯 Desafio 07 <br><a name="desafio07"></a>
+
+Escreva um programa que imprime uma pirâmide na tela, apenas com os números da sequência de Fibonacci.
+
+
+**Resultado esperado**
+```sh
+1    
+1    1    
+1    1    2    
+1    1    2    3    
+1    1    2    3    5    
+1    1    2    3    5    8    
+1    1    2    3    5    8    13
 ```
